@@ -1,13 +1,242 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5F6F0;
 }
+
+.modal-content {
+  width: 35%;
+}
+
+
+@media screen and (max-width:991px) {
+
+  .nav1{
+    padding-left: 3px;
+    gap: 10px;
+    padding-right: 3px;
+  }
+
+
+  .nav1>div{
+    font-size: small;
+   flex-direction: column;
+   gap: 1px;
+   padding-top: 2px;
+   padding-bottom: 2px;
+   
+  }
+
+  nav>div p{
+   
+    width: max-content;
+  }
+
+  nav>p{
+    width: 500px;
+    font-size: small;
+  }  
+
+  nav>p>span{
+    font-size: smaller;
+  }
+  .btn1{
+    width: 170px;
+    font-size: medium;
+    padding: 2px 3px;
+  }
+
+  .dashboard{
+    gap: 5px;
+  }
+
+  /*=============After main nav=====================*/
+
+ 
+.sub-nav2{
+  gap: 5px;
+}
+
+  .nav2>div>span{
+width: 28px;
+height: 28px;
+font-size:larger ;
+  }
+
+
+  .project{
+    font-size: medium;
+    width: max-content;
+  }
+
+  .search{
+    font-size: small;
+  }
+  .btn2{
+   gap:2px;
+   padding: 2px 2px;
+   font-size: small;
+   width: fit-content;
+  }
+  .btn2>span{
+    padding-top: 7px;
+  }
+  .sub-nav2>p{
+    width: 28px;
+    height: 28px;
+    font-size: larger;
+
+  }
+
+  
+
+.dashboard-nav >p{
+  width: auto;
+  font-size: larger;
+  gap: 10px;
+}
+
+.btn3{
+  font-size: medium;
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+
+
+.main{
+  width: 40%;
+  height: 300px;
+}
+
+.main>div p{
+  font-size: small;
+}
+
+.add{
+  width: 40%;
+  height: 300px;
+}
+
+.message{
+right: 35px;
+}
+
+.main-container{
+  flex-wrap: wrap;
+}
+
+.modal-content {
+  width: 55%;
+}
+
+
+}
+
+@media screen and (max-width:635px){
+
+
+  nav>p {
+    width: 150px;
+    font-size: 10px;
+    text-align: center;}
+
+    .btn1 {
+      width: 100px;
+      font-size: small;
+      padding: 0px 2px;}
+
+      .nav2 {
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: center;
+        padding-left: 4px;
+    }
+
+    .sub-nav2{
+      margin-top: 10px;
+      width: -webkit-fill-available;
+      justify-content: space-between;
+    }
+
+    .dashboard {
+      gap: 5px;
+      justify-content: center;
+      width: 250px;}
+
+    .main{
+      
+      height: fit-content;
+    }
+
+
+    .add{
+     
+      height: auto;
+    }
+
+    .main>img{
+      height: 60%;
+    }
+
+    .main>div p{
+      width:fit-content;
+      font-size: 10px;
+    }
+
+
+    .modal-content {
+      width: 62.5%;
+    }
+   
+   
+    .p1{
+      width: max-content;
+      font-size: 10px;
+    }
+
+    .btn4{
+      font-size: small;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+}
+
+@media screen and (max-width:445px){
+  .nav2{
+    padding-left: 4px;
+  }
+  
+  .search input{
+      width: 110px;
+      font-size: x-small;
+  }
+
+  .btn2>p{
+    font-size: x-small;
+    width: 60px;
+  }
+  
+  .dashboard-nav >p {
+    font-size: medium;
+  }
+
+  .main>div p {
+    font-size: 8px;}
+
+    .modal-content {
+      width: 80%;}
+
+}
+
+
+
