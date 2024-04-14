@@ -6,7 +6,7 @@ import { BsChatRightFill } from "react-icons/bs";
 import { GoPlusCircle } from "react-icons/go";
 import { RxCross2 } from "react-icons/rx";
 import ToggleButton from './ToggleButton';
-
+import { RiFolder4Line } from "react-icons/ri";
 
 const ProjectDashboard = () => {
 
@@ -64,7 +64,7 @@ const ProjectDashboard = () => {
       <div className='w-10/12 bg-white rounded mx-auto py-7 px-9 h-auto'>
        <div className='w-full flex justify-between'>
        <div className='flex items-center gap-6 '>
-       <GrFolder className='text-2xl ' />
+       <RiFolder4Line className='text-3xl ' />
        <div className='flex flex-col'>
        <p className='font-semibold '>Default Project</p>
        <p className='text-[#D1D1D1]'>1 storyboard</p></div>
@@ -92,7 +92,7 @@ const ProjectDashboard = () => {
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
           <div className="modal-content bg-white p-9 w-3/12 rounded-lg">
             <div className='  w-full flex justify-between items-center'>
-            <h2 className='text-2xl font-bold mb-4   '>New Storyboard</h2>
+            <h2 className='text-2xl font-bold mb-4'>New Storyboard</h2>
             <RxCross2  onClick={closeModal} className='font-bold text-xl mb-3 cursor-pointer'/></div>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
